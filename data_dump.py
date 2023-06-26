@@ -8,7 +8,7 @@ client = pymongo.MongoClient("mongodb+srv://Bikash:Loveyoubaby@cluster0.ndlu6.mo
 
 DATA_FILE_PATH = "/Users/bikashsmac/Desktop/Projects/AMEX Credit Card Fault Detection/credit_card.csv"
 DATABASE_NAME = "AMEX_CREDITCARD"
-COLLECTION_NAME = "CCDF"
+COLLECTION_NAME = "CCFD"
 
 if __name__=="__main__":
     df=pd.read_csv(DATA_FILE_PATH)

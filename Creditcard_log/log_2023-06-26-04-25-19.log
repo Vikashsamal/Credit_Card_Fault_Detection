@@ -1,2 +1,0 @@
-[2023-06-26 04:25:22,174] root - INFO - Export collection data as pandas dataframe
-[2023-06-26 04:25:22,175] root - INFO - Reading data from database:AMEX_CREDITCARD and collection:CCFD

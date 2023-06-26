@@ -25,6 +25,15 @@ class DataIngestionConfig:
             self.train_file_path = os.path.join(self.data_ingestion_dir, "dataset", TRAIN_FILE_NAME)
             self.test_file_path = os.path.join(self.data_ingestion_dir, "dataset", TEST_FILE_NAME)
             self.test_size = 0.2
-
         except Exception as e:
             raise CreditcardException(e, sys)
+    
+    # Convert data into dicionary
+    def to_dict(self,)->dict:
+        try:
+            return self.__dict__
+        except Exception as e:
+            raise CreditcardException(e, sys)
+
+
+        

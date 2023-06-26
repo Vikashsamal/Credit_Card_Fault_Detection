@@ -1,0 +1,29 @@
+[2023-06-27 02:24:52,000] numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+[2023-06-27 02:24:55,255] root - INFO - Export collection data as pandas dataframe
+[2023-06-27 02:24:55,255] root - INFO - Reading data from database:AMEX_CREDITCARD and collection:CCFD
+[2023-06-27 02:24:55,444] pymongo.ocsp_support - DEBUG - Peer did not staple an OCSP response
+[2023-06-27 02:24:55,444] pymongo.ocsp_support - DEBUG - Requesting OCSP data
+[2023-06-27 02:24:55,444] pymongo.ocsp_support - DEBUG - Trying http://r3.o.lencr.org
+[2023-06-27 02:24:55,477] urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): r3.o.lencr.org:80
+[2023-06-27 02:24:55,519] urllib3.connectionpool - DEBUG - http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+[2023-06-27 02:24:55,520] pymongo.ocsp_support - DEBUG - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+[2023-06-27 02:24:55,520] pymongo.ocsp_support - DEBUG - Verifying response
+[2023-06-27 02:24:55,521] pymongo.ocsp_support - DEBUG - Responder is issuer
+[2023-06-27 02:24:55,521] pymongo.ocsp_support - DEBUG - Caching OCSP response.
+[2023-06-27 02:24:55,521] pymongo.ocsp_support - DEBUG - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+[2023-06-27 02:24:57,776] root - INFO - Find columns:Index(['_id', 'customer_id', 'name', 'age', 'gender', 'owns_car', 'owns_house',
+       'no_of_children', 'net_yearly_income', 'no_of_days_employed',
+       'occupation_type', 'total_family_members', 'migrant_worker',
+       'yearly_debt_payments', 'credit_limit', 'credit_limit_used(%)',
+       'credit_score', 'prev_defaults', 'default_in_last_6months',
+       'credit_card_default'],
+      dtype='object')
+[2023-06-27 02:24:57,777] root - INFO - Dropping columns: _id
+[2023-06-27 02:24:57,787] root - INFO - Rows and Columns in df:(45528, 19)
+[2023-06-27 02:24:57,787] root - INFO - Save data in future store
+[2023-06-27 02:24:57,796] root - INFO - Create feature store folder if not available.
+[2023-06-27 02:24:57,796] root - INFO - Save df to feature store folder
+[2023-06-27 02:24:58,200] root - INFO - Splitting our data into train and test set.
+[2023-06-27 02:24:58,210] root - INFO - Create dataset directory folder if not exists
+[2023-06-27 02:24:58,210] root - INFO - Save dataset to feature store folder.
+[2023-06-27 02:24:58,614] root - INFO - Data ingestion artifact: DataIngestionArtifact(feature_store_file_path='/Users/bikashsmac/Desktop/Projects/AMEX Credit Card Fault Detection/artifact/06272023__022455/data_ingestion/feature_store/credit_card.csv', train_file_path='/Users/bikashsmac/Desktop/Projects/AMEX Credit Card Fault Detection/artifact/06272023__022455/data_ingestion/dataset/train.csv', test_file_path='/Users/bikashsmac/Desktop/Projects/AMEX Credit Card Fault Detection/artifact/06272023__022455/data_ingestion/dataset/test.csv')
